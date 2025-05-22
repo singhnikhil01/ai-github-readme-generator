@@ -1,48 +1,47 @@
 # ai-github-readme-generator
 
-[![GitHub Forks](https://img.shields.io/github/forks/USER/REPO?style=for-the-badge&logo=github)](https://github.com/USER/REPO/network/members)
-[![GitHub Stars](https://img.shields.io/github/stars/USER/REPO?style=for-the-badge&logo=github)](https://github.com/USER/REPO/stargazers)
-[![GitHub Watchers](https://img.shields.io/github/watchers/USER/REPO?style=for-the-badge&logo=github)](https://github.com/USER/REPO/watchers)
-[![Contributions Welcome](https://img.shields.io/badge/Contributions-welcome-brightgreen.svg?style=for-the-badge)](https://github.com/USER/REPO/pulls)
+[![GitHub Forks](https://img.shields.io/github/forks/singhnikhil01/ai-github-readme-generator?style=for-the-badge&logo=github)](https://github.com/singhnikhil01/ai-github-readme-generator/network/members)
+[![GitHub Stars](https://img.shields.io/github/stars/singhnikhil01/ai-github-readme-generator?style=for-the-badge&logo=github)](https://github.com/singhnikhil01/ai-github-readme-generator/stargazers)
+[![GitHub Watchers](https://img.shields.io/github/watchers/singhnikhil01/ai-github-readme-generator?style=for-the-badge&logo=github)](https://github.com/singhnikhil01/ai-github-readme-generator/watchers)
+[![Contributions Welcome](https://img.shields.io/badge/Contributions-welcome-brightgreen.svg?style=for-the-badge)](https://github.com/singhnikhil01/ai-github-readme-generator/pulls)
 [![Language](https://img.shields.io/badge/Language-TypeScript-yellow.svg?style=for-the-badge)](https://en.wikipedia.org/wiki/Programming_language)
 [![Built with React](https://img.shields.io/badge/Built%20with-React-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
 [![Built with TypeScript](https://img.shields.io/badge/Built%20with-TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Styled with Tailwind CSS](https://img.shields.io/badge/Styled%20with-Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/) <!-- Assuming Tailwind from common React setups, though not explicitly listed -->
+[![Styled with Tailwind CSS](https://img.shields.io/badge/Styled%20with-Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Built with Node.js](https://img.shields.io/badge/Built%20with-Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![Powered by Gemini](https://img.shields.io/badge/Powered%20by-Gemini-blueviolet?style=for-the-badge&logo=google-gemini&logoColor=white)](https://deepmind.google/technologies/gemini/)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge)](https://github.com/singhnikhil01/ai-github-readme-generator/graphs/commit-activity)
 
-AI GitHub Readme Generator is a smart tool designed to streamline the process of creating high-quality, professional README.md files using artificial intelligence. Users can simply provide a GitHub repository URL or upload a ZIP file of their project, and the tool will analyze the code and context to generate a structured and informative README, saving significant time and effort while enhancing project presentation.
+AI GitHub Readme Generator is a smart tool designed to streamline the creation of clean, professional, and comprehensive README.md files. By leveraging the power of AI, the tool analyzes project information from a provided GitHub repository URL or an uploaded ZIP file and generates a well-structured README, saving developers significant time and enhancing project presentation and discoverability.
 
 ## Table of Contents
 
-*   [Features](#features)
-*   [Technologies Used](#technologies-used)
-*   [Installation](#installation)
-*   [Usage](#usage)
-*   [Contributing](#contributing)
-*   [License](#license)
+-   [Features](#features)
+-   [Technologies Used](#technologies-used)
+-   [Installation](#installation)
+-   [Usage](#usage)
+-   [Contributing](#contributing)
+-   [License](#license)
 
 ## Features
 
-*   **AI-Powered Generation**: Automatically generates README content using AI based on project code analysis.
-*   **Multiple Input Methods**: Supports generating READMEs from GitHub repository URLs or uploaded ZIP files.
-*   **Time-Saving**: Quickly creates initial README drafts, reducing manual writing effort.
-*   **Professional Output**: Aims to produce clean, well-structured, and professional-looking README files.
-*   **Enhance Project Presentation**: Helps developers create better documentation for their projects.
+*   **AI-Powered Generation:** Creates README.md files using advanced AI analysis.
+*   **Input Flexibility:** Accepts GitHub repository URLs or project ZIP file uploads.
+*   **Time Saving:** Automates the README writing process.
+*   **Enhanced Presentation:** Generates structured and professional README content.
+*   **Analyzes Project Details:** Extracts information from project structure, dependencies, and potentially code snippets to inform the README.
 
 ## Technologies Used
 
 *   TypeScript
 *   Node.js
-*   @google/genai (Likely powering the AI generation)
-*   jszip (Likely used for processing ZIP file uploads)
-*   react
+*   React
+*   @google/genai (for AI capabilities, likely Gemini API)
+*   jszip (for handling ZIP file uploads)
 *   react-dom
-*   @types/node
-*   @types/react
-*   @types/react-dom
 *   typescript
-*   +1 more (Other dependencies may exist)
+
+*(Note: Other dependencies like `@types/*` are development dependencies)*
 
 ## Installation
 
@@ -60,33 +59,29 @@ To get a local copy up and running, follow these simple steps:
     ```bash
     npm install
     ```
-4.  Set your Gemini API key. Create a `.env.local` file in the root directory if it doesn't exist, and add your API key:
+4.  Set up environment variables: Create a `.env.local` file in the root directory and add your AI API key (e.g., Gemini API key). Refer to `metadata.json` or other configuration files for required variable names.
     ```env
     GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+    # Add other required environment variables here
     ```
-    Replace `YOUR_GEMINI_API_KEY` with your actual API key obtained from Google AI Studio or similar.
 
 ## Usage
 
-After installation and setting up the API key, you can run the application locally:
+To run the AI GitHub Readme Generator locally:
 
-*   To run the development server:
+1.  Ensure you have completed the [Installation](#installation) steps.
+2.  Start the development server:
     ```bash
     npm run dev
     ```
-    This will typically start the application on a local port (e.g., `http://localhost:5173`). Open this URL in your browser to use the generator.
+    This will typically start the application on `http://localhost:5173` (or another port specified by Vite).
+3.  Open your web browser and navigate to the local development URL.
+4.  Use the interface to provide a GitHub repository URL or upload a project ZIP file.
+5.  The application will process the input using AI and generate a README.md file.
 
-*   To build the project for production:
-    ```bash
-    npm run build
-    ```
-
-*   To preview the production build locally:
-    ```bash
-    npm run preview
-    ```
-
-Follow the on-screen instructions within the application to input a GitHub URL or upload a ZIP file and generate a README.
+You can also build the project for production or preview the build:
+*   Build: `npm run build`
+*   Preview build: `npm run preview`
 
 ## Contributing
 
@@ -99,4 +94,4 @@ Contributions are welcome! Please feel free to open an issue to discuss a new fe
 
 ## License
 
-License information was not automatically detected. Please add license details if you are distributing this project.
+License information was not automatically detected. Please add license details here.
