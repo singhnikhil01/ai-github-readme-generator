@@ -1,4 +1,5 @@
 # ai-github-readme-generator
+### 🚀Check out the live app: [AI README Generator](https://ai-github-readme-generator-kappa.vercel.app/)
 
 [![GitHub Forks](https://img.shields.io/github/forks/singhnikhil01/ai-github-readme-generator?style=for-the-badge&logo=github)](https://github.com/singhnikhil01/ai-github-readme-generator/network/members)
 [![GitHub Stars](https://img.shields.io/github/stars/singhnikhil01/ai-github-readme-generator?style=for-the-badge&logo=github)](https://github.com/singhnikhil01/ai-github-readme-generator/stargazers)
@@ -62,7 +63,6 @@ To get a local copy up and running, follow these simple steps:
 4.  Set up environment variables: Create a `.env.local` file in the root directory and add your AI API key (e.g., Gemini API key). Refer to `metadata.json` or other configuration files for required variable names.
     ```env
     GEMINI_API_KEY=YOUR_GEMINI_API_KEY
-    # Add other required environment variables here
     ```
 
 ## Usage
