@@ -309,7 +309,7 @@ const App: React.FC = () => {
 
       <footer className="text-center mt-12 py-6 border-t border-slate-700">
         <p className="text-slate-500">
-          Powered by Gemini API & React. Crafted with care.
+          Built by Nikhil❤️. Crafted with care.
         </p>
       </footer>
     </div>
